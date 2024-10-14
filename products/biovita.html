@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biovita Liquid BioFertilizer</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <style>
+            body {
+                margin: 10px 20px;
+                padding: 0;
+                box-sizing: border-box;
+                /* set background less white than image  */
+                background-color: #F3F4F6;
+            }
+
+
+            .container {
+                display: flex;
+                justify-content: space-around;
+                /* align-items: center; */
+                gap: 20px;
+
+            }
+
+            .prod-img {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: #ffff;
+            }
+
+            .prod-img img {
+                width: 480px;
+                height: 600px;
+            }
+
+            .prod-info {
+                width: 50%;
+
+            }
+
+            .title {
+                margin-top: 50px;
+                gap: 0px;
+            }
+
+            /* apply hover property on btn */
+            #btn:hover {
+                background-color: #22c55e;
+                color: #ffff;
+                cursor: pointer;
+            }
+
+            #btn {
+                background-color: #ffff;
+                color: #22c55e;
+                padding: 10px 20px;
+                border: 1px solid #22c55e;
+                border-radius: 5px;
+                font-size: 16px;
+                font-weight: 500;
+                margin: 10px 0px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="prod-img">
+                <img src="../assets/products/biovita.webp" alt="Biovita Liquid BioFertilizer">
+            </div>
+
+            <div class="prod-info">
+
+                <div class="title">
+                    <p style="font-size: 20px; font-weight: 700;">Biovita Liquid BioFertilizer</p>
+
+                    <p style="color: #908d9d; font-size: 18px;">PI Industries</p>
+
+                    <!-- import stars -->
+                    <div class="reviews">
+
+                        <i class="fas fa-star" style="color: #fa9527;"></i>
+                        <i class="fas fa-star" style="color: #fa9527;"></i>
+                        <i class="fas fa-star" style="color: #fa9527;"></i>
+                        <i class="fas fa-star" style="color: #fa9527;"></i>
+                        <i class="fas fa-star" style="color: #fa9527;"></i>
+
+                        <span style="color: #ffff; background-color: #333333; font-size: 16px; width: 22px; height: 28px; padding: 2px 6px; box-sizing: border-box; border-radius: 5px;
+                            margin: auto 5px; text-align: center;">
+                            4.9</span>
+
+                        <span style="color:#22c55e; font-size: 14px;">89 reviews</span>
+                    </div>
+                </div>
+
+                <div class="price">
+                    <p>Price <span
+                            style="font-size: 26px; height: 36px; width: 55px; margin: 0px 0px 0px 6px;">&#8377;420</span>
+                        <span
+                            style="color:#908d9d; margin: 0px 0px 0px 10px; font-size: 18px; height: 36px; width: 24px; text-decoration: line-through;">&#8377;599
+                        </span>
+
+                        <span
+                            style="color:#ffff; background-color: #fa9527; margin: auto 10px; padding: 4px 5px; height: 12px; justify-content: center; align-items: center; text-align: center; font-size: 14px; border-radius: 5px; font-weight:400;">
+                            30% OFF</span>
+                    </p>
+
+                    <p style="color: #4eaa6f; font-size: 18px; margin: 0px 0px 0px 6px;">
+                        <!-- import a discount symbol -->
+                        <i class="fas fa-tags" style="color: #4eaa6f;"></i>
+                        Saved Price &#8377;179
+                    </p>
+
+                    <p>
+                        <span style=" font-size: 16px; font-weight: 500;">Inclusive of all taxes</span>
+                    </p>
+
+                    <p>Size <span style="font-size: 18px; margin: 0px 0px 0px 6px; font-weight: 500;">500 ml</span></p>
+                </div>
+
+                <div class="buttons">
+                    <button
+                        style="background-color: #fa9527; color: #ffff; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; font-weight: 500; margin: 10px 0px; cursor: pointer;">
+                        Add to Cart</button>
+
+                    <button id="btn">
+                        Buy Now</button>
+                </div>
+
+            </div>
+
+    </body>
+
+</html>
