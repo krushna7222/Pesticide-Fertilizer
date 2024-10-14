@@ -19,6 +19,8 @@ header {
   width: 100vw;
   background-color: var(--navbg-color);
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: fixed;
+  top: 0px;
 }
 #top {
   height: 60px;
@@ -51,11 +53,15 @@ nav hr {
   margin-right: 3vw;
 }
 #function > li,
-#menu > li {
+#menu > li,
+#sidemenu > li,
+#megamenu > li {
   list-style-type: none;
 }
 #function > li > a,
-#menu > li > a {
+#menu > li > a,
+#sidemenu > li > a,
+#megamenu > li > a {
   text-decoration: none;
   color: var(--text-color);
 }
@@ -71,4 +77,85 @@ nav hr {
 #menu {
   display: flex;
   gap: 20px;
+}
+
+/* Megamenu CSS */
+
+#megamenu {
+  position: absolute;
+  top: 95px;
+  left: 3vw;
+  background-color: var(--navbg-color);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+#megamenu > li {
+  margin-bottom: 15px;
+  border-bottom: 1px solid gray;
+  border-width: 90%;
+}
+#megamenu {
+  opacity: 0;
+  visibility: hidden;
+}
+#sidemenu:hover #megamenu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Media Queries */
+
+@media (max-width: 1425px) {
+  #navsearchicon {
+    display: none;
+  }
+}
+@media (max-width: 1319px) {
+  #menu > li > a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1040px) {
+  #menu > li > a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 901px) {
+  #menubar {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  #menu {
+    display: none;
+  }
+  #bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3vw;
+  }
+  #menu > li > a {
+    font-size: 14px;
+  }
+  .searchbar {
+    padding: 4px;
+  }
+  #top > .logo > h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 600px) {
+  #top > .logo > h1 {
+    font-size: 30px;
+  }
+  #function > li > a > span {
+    margin-left: 4px;
+    font-size: 12px;
+  }
+  #function {
+    gap: 10px;
+    margin-right: 2vw;
+  }
 }
