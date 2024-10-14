@@ -1,0 +1,19 @@
+{
+  "name": "pesticide-fertilizer",
+  "version": "1.0.0",
+  "description": "This Project is about Pesticide-Fertilizers Website ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krushna7222/Pesticide-Fertilizer.git"
+  },
+  "author": "Dev.Krushna_Sahane, Dev.Yash_Walke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krushna7222/Pesticide-Fertilizer/issues"
+  },
+  "homepage": "https://github.com/krushna7222/Pesticide-Fertilizer#readme"
+}
