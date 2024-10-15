@@ -3,17 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* scrollbar none */
-  scrollbar-width: none;
-  -ms-overflow-style: none;
 }
 :root {
   --navbg-color: white;
   --footbg-color: rgb(25, 25, 78);
   --logo-color: rgb(2, 106, 2);
   --text-color: black;
-  --hover-color: rgb(21, 255, 0) a;
-  --hero-text: linear-gradient(to bottom right, #ff0303, #064f04, #5900ff);
+  --hero-text: linear-gradient(to bottom right, #ff0303, #cce700, #ff2323);
+  /* --hero-text: white; */
+  --hero-bg: linear-gradient(to bottom right, #00fcd2, #00980f, #a3d81a);
   --box-shaddow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -97,7 +95,7 @@ nav hr {
 
 #megamenu {
   position: absolute;
-  top: 60px;
+  top: 55px;
   right: 3vw;
   background-color: var(--navbg-color);
   padding: 20px;
@@ -121,94 +119,20 @@ nav hr {
 
 /* Set height for the hero section */
 #hero {
-  position: relative;
+  background-image: var(--hero-bg);
+  width: 100vw;
+  height: 20vh;
   margin-top: 105px;
-  max-width: 100%;
-  height: 85vh; /* Full screen height */
-  overflow: hidden;
-}
-
-/* Slide container for images */
-.slide {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures image covers the full area */
-}
-
-/* Hero text styling */
-.hero-text {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background: var(--hero-text);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-text h1 {
   font-size: 4rem;
-  margin: 0;
-}
-
-.hero-text p {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-/* Navigation buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Fade animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Ensure the first slide is visible when the page loads */
-.slide:first-child {
-  display: block;
+  background: var(--hero-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Media Queries */
@@ -217,6 +141,9 @@ nav hr {
   .searchbar > input {
     width: 20.8vw;
   }
+  .hero-text h1 {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -224,8 +151,6 @@ nav hr {
   #menu > li > a,
   #sidemenu > li > a,
   #megamenu > li > a {
-    text-decoration: none;
-    color: var(--text-color);
     font-size: 16px;
   }
   #menu {
@@ -246,7 +171,6 @@ nav hr {
   }
   .hero-text h1 {
     font-size: 3rem;
-    margin: 0;
   }
 }
 
@@ -255,8 +179,6 @@ nav hr {
   #menu > li > a,
   #sidemenu > li > a,
   #megamenu > li > a {
-    text-decoration: none;
-    color: var(--text-color);
     font-size: 14px;
   }
   #function > li > a > span {
@@ -275,8 +197,7 @@ nav hr {
     font-size: 12px;
   }
   .hero-text h1 {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 2rem;
   }
 }
 
@@ -286,11 +207,6 @@ nav hr {
   }
 }
 @media (max-width: 625px) {
-  #bottom {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 3vw;
-  }
   #menu {
     display: none;
   }
@@ -300,15 +216,10 @@ nav hr {
   #function > li > a > span {
     display: none;
   }
-  #navsearchicon {
-    display: none;
-  }
-  .hero-text h1 {
-    font-size: 2rem;
-    margin: 0;
-  }
+
   #navsearch,
-  .searchbar {
+  .searchbar,
+  #navsearchicon {
     display: none;
   }
   header {
@@ -317,17 +228,22 @@ nav hr {
   #hero {
     margin-top: 65px;
   }
+  #hero {
+    height: 100px;
+  }
 }
 @media (max-width: 425px) {
   #top > .logo > h1 {
     font-size: 25px;
   }
-  #navsearch,
-  .searchbar {
-    display: none;
+  .hero-text {
+    top: 35%;
+    left: 50%;
   }
   .hero-text h1 {
     font-size: 1.5rem;
-    margin: 0;
+  }
+  #hero {
+    height: 70px;
   }
 }
