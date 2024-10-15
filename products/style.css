@@ -244,8 +244,54 @@ body {
     color: #22c55e;
 }
 
-/* .prod-description {
+.prod-description {
     padding: 20px 50px;
     background-color: #ffff;
 
-} */
+}
+
+.prod-description>h2 {
+    margin: 20px 0px;
+}
+
+.about {
+    margin: 30px 10px;
+
+}
+
+.about>p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about>ul {
+    margin: 10px 20px;
+
+}
+
+.about>ul>li {
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+/* give border to table */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+    margin: 20px 0px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+    color: #454545;
+}
+
+th {
+    border: 2px solid black;
+    text-align: center;
+    color: black;
+}
