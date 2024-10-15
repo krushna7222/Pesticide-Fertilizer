@@ -6,75 +6,73 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Biovita Liquid BioFertilizer</title>
 
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
         <style>
-            body {
-                margin: 10px 20px;
-                padding: 0;
-                box-sizing: border-box;
-                /* set background less white than image  */
-                background-color: #F3F4F6;
-            }
+            
+            
 
-
-            .container {
-                display: flex;
-                justify-content: space-around;
-                /* align-items: center; */
-                gap: 20px;
-
-            }
-
-            .prod-img {
-                width: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                background-color: #ffff;
-            }
-
-            .prod-img img {
-                width: 480px;
-                height: 600px;
-            }
-
-            .prod-info {
-                width: 50%;
-
-            }
-
-            .title {
-                margin-top: 50px;
-                gap: 0px;
-            }
-
-            /* apply hover property on btn */
-            #btn:hover {
-                background-color: #22c55e;
-                color: #ffff;
-                cursor: pointer;
-            }
-
-            #btn {
-                background-color: #ffff;
-                color: #22c55e;
-                padding: 10px 20px;
-                border: 1px solid #22c55e;
-                border-radius: 5px;
-                font-size: 16px;
-                font-weight: 500;
-                margin: 10px 0px;
-            }
         </style>
 
     </head>
 
     <body>
+
+        <header>
+            <nav>
+                <div id="top">
+                    <div class="logo">
+                        <h1>Agriculture</h1>
+                    </div>
+                    <div class="searchbar">
+                        <input type="search" name="searchitem" id="navsearch" placeholder="Search" />
+                        <i class="fa-solid fa-magnifying-glass" id="navsearchicon"></i>
+                    </div>
+                    <div class="right">
+                        <ul id="function">
+                            <li>
+                                <a href=""><i class="fa-regular fa-heart"></i><span>Wishlist</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-regular fa-user"></i><span>Login</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr />
+                <div id="bottom">
+                    <ul id="sidemenu">
+                        <li>
+                            <a href=""><i class="fa-solid fa-bars" id="menubar"></i></a>
+                            <ul id="megamenu">
+                                <li><a href="">SEEDS</a></li>
+                                <li><a href="pesticide.html">PESTICIDES</a></li>
+                                <li><a href="organic.html">ORGANIC</a></li>
+                                <li><a href="">MICRONUTRIENTS</a></li>
+                                <li><a href="">FERTILIZERS</a></li>
+                                <li><a href="">EQUIPMENTS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul id="menu">
+                        <li><a href="">SEEDS</a></li>
+                        <li><a href="pesticide.html">PESTICIDES</a></li>
+                        <li><a href="organic.html">ORGANIC</a></li>
+                        <li><a href="">MICRONUTRIENTS</a></li>
+                        <li><a href="">FERTILIZERS</a></li>
+                        <li><a href="">EQUIPMENTS</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <div class="container">
             <div class="prod-img">
@@ -84,36 +82,35 @@
             <div class="prod-info">
 
                 <div class="title">
-                    <p style="font-size: 20px; font-weight: 700;">Biovita Liquid BioFertilizer</p>
+                    <p id="p1">Biovita Liquid BioFertilizer</p>
 
-                    <p style="color: #908d9d; font-size: 18px;">PI Industries</p>
+                    <p id="p2">PI Industries</p>
 
                     <!-- import stars -->
                     <div class="reviews">
 
-                        <i class="fas fa-star" style="color: #fa9527;"></i>
-                        <i class="fas fa-star" style="color: #fa9527;"></i>
-                        <i class="fas fa-star" style="color: #fa9527;"></i>
-                        <i class="fas fa-star" style="color: #fa9527;"></i>
-                        <i class="fas fa-star" style="color: #fa9527;"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
 
-                        <span style="color: #ffff; background-color: #333333; font-size: 16px; width: 22px; height: 28px; padding: 2px 6px; box-sizing: border-box; border-radius: 5px;
-                            margin: auto 5px; text-align: center;">
+                        <span id="rating">
                             4.9</span>
 
-                        <span style="color:#22c55e; font-size: 14px;">89 reviews</span>
+                        <span id="rev">89 reviews</span>
                     </div>
                 </div>
 
                 <div class="price">
-                    <p>Price <span
-                            style="font-size: 26px; height: 36px; width: 55px; margin: 0px 0px 0px 6px;">&#8377;420</span>
+                    <p id="prinfo">Price
+                        <span id="rs">&#8377;420</span>
                         <span
-                            style="color:#908d9d; margin: 0px 0px 0px 10px; font-size: 18px; height: 36px; width: 24px; text-decoration: line-through;">&#8377;599
+                            id="cutprice">&#8377;599
                         </span>
 
                         <span
-                            style="color:#ffff; background-color: #fa9527; margin: auto 10px; padding: 4px 5px; height: 12px; justify-content: center; align-items: center; text-align: center; font-size: 14px; border-radius: 5px; font-weight:400;">
+                            id="off">
                             30% OFF</span>
                     </p>
 
@@ -123,16 +120,72 @@
                         Saved Price &#8377;179
                     </p>
 
-                    <p>
-                        <span style=" font-size: 16px; font-weight: 500;">Inclusive of all taxes</span>
+                    <p id="inc">
+                        Inclusive of all taxes
                     </p>
 
-                    <p>Size <span style="font-size: 18px; margin: 0px 0px 0px 6px; font-weight: 500;">500 ml</span></p>
+                </div>
+                
+                <div class="size">
+                    <p>Size <span id="qnty">500 ml</span></p>
+                </div>
+                
+                <div class="name">
+                    <p>Variants</p>
+                </div>
+                <div class="variants">
+                    <div class="box">
+                        <p id="disc">34% OFF</p>
+                        <p>250 ml</p>
+                        <p id="mrp">&#8377;244 <span>&#8377;371</span></p>
+                    </div>
+                    <div class="box">
+                        <p id="disc">30% OFF</p>
+                        <p>500 ml</p>
+                        <p id="mrp">&#8377;420 <span>&#8377;599</span></p>
+                    </div>
+                    <div class="box">
+                        <p id="disc">48% OFF</p>
+                        <p>1 ltr</p>
+                        <p id="mrp">&#8377;666 <span>&#8377;1292</span></p>
+                    </div>
+                    <div class="box">
+                        <p id="disc">53% OFF</p>
+                        <p>2 ltr</p>
+                        <p id="mrp">&#8377;1222 <span>&#8377;2584</span></p>
+                    </div>
+                    <div class="box">
+                        <p id="disc">34% OFF</p>
+                        <p>1250 ml</p>
+                        <p id="mrp">&#8377;1220 <span>&#8377;1855</span></p>
+                    </div>
+                    <div class="box">
+                        <p id="disc">17% OFF</p>
+                        <p>100 ml</p>
+                        <p id="mrp">&#8377;119 <span>&#8377;144</span></p>
+                    </div>
+                </div>
+                
+                <div class="services">
+                    <div class="s1">
+                        <!-- import earth symbol -->
+                        <i class="fas fa-globe"></i>
+                        <p>Country of Origin India</p>
+                    </div>
+                    <div class="s1">
+                        <!-- import secure payment symbol -->
+                        <i class="fas fa-lock"></i>
+                        <p>Secure Payments</p>
+                    </div>
+                    <div class="s1">
+                        <!-- import delivery vehicle symbol-->
+                        <i class="fas fa-truck"></i>
+                        <p>In stock, Ready to Ship</p>
+                    </div>
                 </div>
 
                 <div class="buttons">
-                    <button
-                        style="background-color: #fa9527; color: #ffff; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; font-weight: 500; margin: 10px 0px; cursor: pointer;">
+                    <button id="btn1">
                         Add to Cart</button>
 
                     <button id="btn">
@@ -140,7 +193,9 @@
                 </div>
 
             </div>
+        </div>
 
+        
     </body>
 
 </html>
