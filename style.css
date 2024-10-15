@@ -69,6 +69,11 @@ nav hr {
   color: var(--text-color);
   font-size: 18px;
 }
+#menu > li > a:hover,
+#megamenu > li > a :hover {
+  color: #0da30a;
+  font-weight: 600;
+}
 #function > li > a > span {
   margin-left: 7px;
 }
@@ -87,8 +92,8 @@ nav hr {
 
 #megamenu {
   position: absolute;
-  top: 95px;
-  left: 3vw;
+  top: 60px;
+  right: 3vw;
   background-color: var(--navbg-color);
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
@@ -299,6 +304,12 @@ nav hr {
   #navsearch,
   .searchbar {
     display: none;
+  }
+  header {
+    height: 60px;
+  }
+  #hero {
+    margin-top: 65px;
   }
 }
 @media (max-width: 425px) {
