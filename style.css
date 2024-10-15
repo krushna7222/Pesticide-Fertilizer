@@ -37,9 +37,11 @@ nav hr {
   margin: 0px 2.5vw;
 }
 
-#navsearch {
+.searchbar > input {
   width: 22.5vw;
   border: none;
+  font-size: 18px;
+  outline: none;
 }
 .searchbar {
   width: 25vw;
@@ -64,6 +66,7 @@ nav hr {
 #megamenu > li > a {
   text-decoration: none;
   color: var(--text-color);
+  font-size: 18px;
 }
 #function > li > a > span {
   margin-left: 7px;
@@ -76,7 +79,7 @@ nav hr {
 }
 #menu {
   display: flex;
-  gap: 20px;
+  gap: 0px 40px;
 }
 
 /* Megamenu CSS */
@@ -106,56 +109,90 @@ nav hr {
 /* Media Queries */
 
 @media (max-width: 1425px) {
-  #navsearchicon {
-    display: none;
+  .searchbar > input {
+    width: 20.8vw;
   }
 }
-@media (max-width: 1319px) {
-  #menu > li > a {
-    font-size: 12px;
+
+@media (max-width: 850px) {
+  #function > li > a,
+  #menu > li > a,
+  #sidemenu > li > a,
+  #megamenu > li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
   }
-}
-@media (max-width: 1040px) {
-  #menu > li > a {
-    font-size: 10px;
-  }
-}
-@media (min-width: 901px) {
-  #menubar {
-    display: none;
-  }
-}
-@media (max-width: 900px) {
   #menu {
-    display: none;
-  }
-  #bottom {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 3vw;
+    gap: 0px 25px;
   }
-  #menu > li > a {
+  .searchbar > input {
     font-size: 14px;
   }
   .searchbar {
-    padding: 4px;
+    padding: 5px;
   }
   #top > .logo > h1 {
     font-size: 35px;
   }
+  .searchbar > input {
+    width: 19.8vw;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+  #function > li > a,
+  #menu > li > a,
+  #sidemenu > li > a,
+  #megamenu > li > a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+  }
+  #function > li > a > span {
+    margin-left: 4px;
+  }
+  #function {
+    display: flex;
+    margin-right: 3vw;
+  }
+  #menu {
+    display: flex;
+    gap: 10px;
+    gap: 0px 25px;
+  }
+  .searchbar > input {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 625px) {
+  #sidemenu {
+    display: none;
+  }
+}
+@media (max-width: 625px) {
+  #bottom {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3vw;
+  }
+  #menu {
+    display: none;
+  }
   #top > .logo > h1 {
     font-size: 30px;
   }
   #function > li > a > span {
-    margin-left: 4px;
-    font-size: 12px;
+    display: none;
   }
-  #function {
-    gap: 10px;
-    margin-right: 2vw;
+  #navsearchicon {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  #top > .logo > h1 {
+    font-size: 25px;
   }
 }
