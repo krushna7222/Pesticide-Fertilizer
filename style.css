@@ -296,6 +296,10 @@ nav hr {
     font-size: 2rem;
     margin: 0;
   }
+  #navsearch,
+  .searchbar {
+    display: none;
+  }
 }
 @media (max-width: 425px) {
   #top > .logo > h1 {
