@@ -233,6 +233,10 @@ nav hr {
   .searchbar > input {
     width: 19.8vw;
   }
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
 }
 
 @media (max-width: 700px) {
@@ -259,6 +263,10 @@ nav hr {
   .searchbar > input {
     font-size: 12px;
   }
+  .hero-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
 }
 
 @media (min-width: 625px) {
@@ -284,9 +292,21 @@ nav hr {
   #navsearchicon {
     display: none;
   }
+  .hero-text h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
 }
 @media (max-width: 425px) {
   #top > .logo > h1 {
     font-size: 25px;
+  }
+  #navsearch,
+  .searchbar {
+    display: none;
+  }
+  .hero-text h1 {
+    font-size: 1.5rem;
+    margin: 0;
   }
 }
