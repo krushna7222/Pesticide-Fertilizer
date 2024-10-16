@@ -15,6 +15,9 @@
   --hover-color: rgb(21, 255, 0) a;
   --hero-text: linear-gradient(to bottom right, #ff0303, #064f04, #5900ff);
   --box-shaddow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --foot-color: rgb(28, 31, 47);
+  --foot-text-color: rgb(176, 176, 176);
+  --bottom-foot-color: rgb(24, 24, 40);
 }
 
 /* Header CSS */
@@ -240,6 +243,128 @@ nav hr {
   color: var(--text-color);
   font-size: 16px;
 }
+
+/* Footer CSS */
+
+footer {
+  background-color: var(--foot-color);
+  color: var(--foot-text-color);
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#topfooter {
+  padding: 20px 0px 30px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.footcontent {
+  width: 22%;
+}
+.footcontent > p > a {
+  text-decoration: none;
+  color: aqua;
+}
+.footcontent > p {
+  margin: 10px 0px 20px 0px;
+}
+.footcontent > p > i {
+  margin-top: 10px;
+}
+.footcontent > h3 {
+  margin: 10px 0px 20px 0px;
+}
+
+#exgtralink > a,
+#pcompany > li > a {
+  text-decoration: none;
+  color: var(--foot-text-color);
+}
+#exgtralink > a:hover,
+#pcompany > li > a:hover {
+  text-decoration: underline;
+}
+
+.bottomfooter {
+  background-color: var(--bottom-foot-color);
+  color: var(--foot-text-color);
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  border-top: 1px solid gray;
+}
+#bottomfoot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+#footertext {
+  margin-right: 20px;
+}
+
+/* #footer-socials {
+  text-align: right;
+} */
+#footer-socials > p {
+  display: inline-block;
+}
+
+#footer-socials .socials {
+  display: inline-block;
+}
+.facebook {
+  color: #4e64b5;
+}
+
+.twitter {
+  color: #00aced;
+}
+.instagram {
+  color: #9a8f62;
+}
+.youtube {
+  color: #c82929;
+}
+
+.telegram {
+  color: #2ca5e0;
+}
+a.socials-item:hover {
+  border-color: rgba(255, 6, 224, 0.61);
+  background: linear-gradient(
+    to right,
+    rgba(255, 9, 9, 0.12941176470588237),
+    #c000ffb5,
+    rgba(255, 0, 94, 0.14)
+  );
+}
+a.socials-item {
+  display: inline-block;
+  text-align: center;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: #141421;
+  border: 1px solid #2e2e4c;
+}
+.socials-item i {
+  font-size: 17px;
+  text-align: center;
+}
+
+.socials > a {
+  margin-top: 10px;
+  margin-left: 16px;
+  height: 15px;
+  width: 15px;
+  padding: 15px 30px 30px 15px;
+}
+/* .socials > a > i {
+  margin: 0px 10px 10px 0px;
+} */
 
 /* Media Queries */
 
