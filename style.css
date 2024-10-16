@@ -166,6 +166,15 @@ nav hr {
   font-size: 1.5rem;
   margin-top: 10px;
 }
+#hero2 {
+  background-image: url(/assets/img/greenwheat1.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: bottom;
+  margin-top: 5px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
 
 /* Navigation buttons */
 .prev,
