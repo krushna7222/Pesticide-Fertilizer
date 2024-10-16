@@ -478,8 +478,16 @@ a.socials-item {
   #hero {
     margin-top: 65px;
   }
-  container {
+  .container {
     gap: 30px 100px;
+  }
+  #topfooter {
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footcontent {
+    width: 100%;
   }
 }
 @media (max-width: 425px) {
@@ -494,7 +502,26 @@ a.socials-item {
     font-size: 1.5rem;
     margin: 0;
   }
-  container {
+  .container {
     gap: 30px 50px;
+  }
+  #bottomfoot {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0px 30px;
+  }
+  a.socials-item {
+    padding: 10px;
+  }
+  .socials > a {
+    height: 10px;
+    width: 10px;
+    padding: 10px 15px 15px 10px;
+  }
+  .socials > a > i {
+    margin: 0px 10px 10px 0px;
+  }
+  #footer-socials {
+    text-align: center;
   }
 }
