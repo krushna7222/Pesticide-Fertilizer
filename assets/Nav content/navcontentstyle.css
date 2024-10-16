@@ -9,9 +9,8 @@
   --footbg-color: rgb(25, 25, 78);
   --logo-color: rgb(2, 106, 2);
   --text-color: black;
-  --hero-text: linear-gradient(to bottom right, #ff0303, #cce700, #ff2323);
-  /* --hero-text: white; */
-  --hero-bg: linear-gradient(to bottom right, #00fcd2, #00980f, #a3d81a);
+  --hero-text: linear-gradient(to bottom right, #ff0303, #e700ad, #ff2323);
+  --hero-bg: linear-gradient(to bottom right, #00fcd2, #cce700, #1ad83d);
   --box-shaddow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
