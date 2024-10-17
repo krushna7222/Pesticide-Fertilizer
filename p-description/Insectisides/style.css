@@ -445,6 +445,11 @@ a.socials-item {
     width: 100%;
   }
 }
+@media screen and (max-width: 570px) {
+  table {
+    display: none;
+  }
+}
 
 @media (max-width: 425px) {
   #bottomfoot {
