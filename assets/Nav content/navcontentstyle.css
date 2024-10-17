@@ -355,6 +355,9 @@ a.socials-item {
   #hero {
     height: 100px;
   }
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
   #topfooter {
     padding: 20px 30px;
     display: grid;
@@ -373,7 +376,7 @@ a.socials-item {
     left: 50%;
   }
   .hero-text h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   #hero {
     height: 70px;
