@@ -166,14 +166,23 @@ nav hr {
   font-size: 1.5rem;
   margin-top: 10px;
 }
-#hero2 {
-  background-image: url(/assets/img/greenwheat1.jpg);
+#hero2,
+#hero3,
+#hero4 {
+  background-image: url(/assets/img/aboutus.jpg);
   width: 100vw;
   height: 100vh;
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   margin-top: 5px;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+#hero3 {
+  background-image: url(/assets/img/whatisagree.jpg);
+  background-position: bottom;
+}
+#hero4 {
+  background-image: url(/assets/img/product.jpg);
 }
 
 /* Navigation buttons */
@@ -381,6 +390,25 @@ a.socials-item {
   .searchbar > input {
     width: 20.8vw;
   }
+  #hero2,
+  #hero3,
+  #hero4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #hero2,
+  #hero3,
+  #hero4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 500px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -415,6 +443,15 @@ a.socials-item {
   .container {
     gap: 30px 100px;
   }
+  #hero,
+  #hero2,
+  #hero3,
+  #hero4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 400px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -447,6 +484,15 @@ a.socials-item {
   }
   .container {
     gap: 30px 100px;
+  }
+  #hero,
+  #hero2,
+  #hero3,
+  #hero4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 300px;
   }
 }
 
@@ -490,6 +536,15 @@ a.socials-item {
   .container {
     gap: 30px 100px;
   }
+  #hero,
+  #hero2,
+  #hero3,
+  #hero4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 250px;
+  }
   #topfooter {
     padding: 20px 30px;
     display: grid;
@@ -513,6 +568,15 @@ a.socials-item {
   }
   .container {
     gap: 30px 50px;
+  }
+  #hero,
+  #hero2,
+  #hero3,
+  #hero4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 190px;
   }
   #bottomfoot {
     display: grid;
