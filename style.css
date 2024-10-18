@@ -608,6 +608,14 @@ a.socials-item {
     width: 100vw;
     height: 190px;
   }
+  #sticky {
+    bottom: 30px;
+    right: 15px;
+  }
+  #stick {
+    width: 35px;
+    height: 35px;
+  }
   #bottomfoot {
     display: grid;
     grid-template-columns: 1fr;
