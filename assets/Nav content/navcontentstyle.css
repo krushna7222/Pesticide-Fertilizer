@@ -265,6 +265,10 @@ a.socials-item {
   .searchbar > input {
     width: 20.8vw;
   }
+  .hero-text {
+    top: 30%;
+    left: 50%;
+  }
   .hero-text h1 {
     font-size: 3.5rem;
   }
@@ -353,7 +357,11 @@ a.socials-item {
     margin-top: 65px;
   }
   #hero {
-    height: 100px;
+    height: 80px;
+  }
+  .hero-text {
+    top: 35%;
+    left: 50%;
   }
   .hero-text h1 {
     font-size: 1.5rem;
