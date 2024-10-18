@@ -272,6 +272,10 @@ a.socials-item {
   .hero-text h1 {
     font-size: 3.5rem;
   }
+  #menu {
+    display: flex;
+    gap: 0px 30px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -283,7 +287,7 @@ a.socials-item {
   }
   #menu {
     display: flex;
-    gap: 0px 25px;
+    gap: 0px 18px;
   }
   .searchbar > input {
     font-size: 14px;
@@ -318,8 +322,7 @@ a.socials-item {
   }
   #menu {
     display: flex;
-    gap: 10px;
-    gap: 0px 25px;
+    gap: 0px 16px;
   }
   .searchbar > input {
     font-size: 12px;
