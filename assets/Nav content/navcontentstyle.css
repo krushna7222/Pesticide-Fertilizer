@@ -137,6 +137,14 @@ nav hr {
   -webkit-text-fill-color: transparent;
 }
 
+.heroimg > img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  margin-top: 5px;
+  box-shadow: var(--box-shaddow);
+}
+
 /* Footer CSS */
 
 footer {
@@ -276,6 +284,10 @@ a.socials-item {
     display: flex;
     gap: 0px 30px;
   }
+  .heroimg > img {
+    width: 100vw;
+    height: 600px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -304,6 +316,10 @@ a.socials-item {
   .hero-text h1 {
     font-size: 3rem;
   }
+  .heroimg > img {
+    width: 100vw;
+    height: 450px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -324,11 +340,16 @@ a.socials-item {
     display: flex;
     gap: 0px 16px;
   }
+
   .searchbar > input {
     font-size: 12px;
   }
   .hero-text h1 {
     font-size: 2rem;
+  }
+  .heroimg > img {
+    width: 100vw;
+    height: 400px;
   }
 }
 
@@ -366,6 +387,12 @@ a.socials-item {
     top: 35%;
     left: 50%;
   }
+
+  .heroimg > img {
+    width: 100vw;
+    height: 300px;
+  }
+
   .hero-text h1 {
     font-size: 1.5rem;
   }
@@ -410,5 +437,12 @@ a.socials-item {
   }
   #footer-socials {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .heroimg > img {
+    width: 100vw;
+    height: 200px;
   }
 }
