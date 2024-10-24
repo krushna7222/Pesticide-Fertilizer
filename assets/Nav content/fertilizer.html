@@ -11,8 +11,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/style.css" />
+
     <link rel="stylesheet" href="navcontentstyle.css" />
-    <style></style>
+    <style>
+      .item {
+        width: 25%;
+      }
+      img {
+        width: 140px;
+        height: 140px;
+      }
+      @media screen and (max-width: 500px) {
+        .item {
+          width: 40%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -81,6 +96,72 @@
         <div class="hero-text">
           <h1>FERTILIZERS</h1>
         </div>
+      </section>
+      <section class="categories">
+        <h2>Categories</h2>
+        <div class="container">
+          <div class="item">
+            <a href="/assets/file/insecticide.html">
+              <img
+                src="/Products/pesticide/insecticide/01insecticide.webp"
+                alt=""
+              />
+              <h3>Insecticides</h3>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <img
+                src="/Products/pesticide/fungicide/01fungicide.webp"
+                alt=""
+              />
+              <h3>Fungicides</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/assets/file/herbicide.html">
+              <img
+                src="/Products/pesticide/herbicides/01herbicide.webp"
+                alt=""
+              />
+              <h3>Herbicides</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/assets/file/bactericide.html">
+              <img
+                src="/p-description/bactericide/assets/bactinash.avif"
+                alt=""
+              />
+              <h3>Bactericides</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/assets/file/nutritions.html">
+              <img
+                src="/Products/pesticide/nutrients/01nutrients.webp"
+                alt=""
+              />
+              <h3>Nutrients</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/assets/file/protections.html">
+              <img
+                src="/p-description/protections/assets/sticky-traps/yellow-trap22-28.avif"
+                alt=""
+              />
+              <h3>Protections</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="heroimg img1">
+        <img src="/assets/img/8.jpg" alt="" />
+      </section>
+      <section class="heroimg img2">
+        <img src="/assets/img/green.jpg" alt="" />
       </section>
     </main>
     <footer>
