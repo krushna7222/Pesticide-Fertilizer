@@ -11,8 +11,24 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/style.css" />
+
     <link rel="stylesheet" href="navcontentstyle.css" />
-    <style></style>
+    <style>
+      .item {
+        width: 25%;
+      }
+      img {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+      }
+      @media screen and (max-width: 500px) {
+        .item {
+          width: 40%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -52,10 +68,20 @@
                   <li>
                     <a href=""><i class="fa-solid fa-bars" id="menubar"></i></a>
                     <ul id="megamenu">
-                      <li><a href="">HORTICULTURE CROP</a></li>
-                      <li><a href="">FIELD CROP</a></li>
-                      <li><a href="">SPECIAL CATEGORY</a></li>
-                      <li><a href="">POPULAR PRODUCT</a></li>
+                      <li>
+                        <a href="/assets/file/vegetable.html"
+                          >VEGETABLES SEEDS</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/assets/file/fruits.html">FRUIT SEEDS</a>
+                      </li>
+                      <li>
+                        <a href="/assets/file/flower.html">FLOWER SEEDS</a>
+                      </li>
+                      <li>
+                        <a href="/assets/file/fieldcrop.html">FIELD CROP</a>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -66,10 +92,10 @@
         <hr />
         <div id="bottom">
           <ul id="menu">
-            <li><a href="">HORTICULTURE CROP</a></li>
-            <li><a href="">FIELD CROP</a></li>
-            <li><a href="">SPECIAL CATEGORY</a></li>
-            <li><a href="">POPULAR PRODUCT</a></li>
+            <li><a href="/assets/file/vegetable.html">VEGETABLES SEEDS</a></li>
+            <li><a href="/assets/file/fruits.html">FRUIT SEEDS</a></li>
+            <li><a href="/assets/file/flower.html">FLOWER SEEDS</a></li>
+            <li><a href="/assets/file/fieldcrop.html">FIELD CROP</a></li>
           </ul>
         </div>
       </nav>
@@ -79,6 +105,56 @@
         <div class="hero-text">
           <h1>SEEDS</h1>
         </div>
+      </section>
+      <section class="categories">
+        <h2>Categories</h2>
+        <div class="container">
+          <div class="item">
+            <a href="/assets/file/vegetable.html">
+              <img
+                src="/p-description/seeds/vegetables/assets/hph-5531-chilli.avif"
+                alt=""
+              />
+              <h3>Vegetables</h3>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="/assets/file/fruits.html">
+              <img
+                src="/p-description/seeds/fruits/assets/dragon-king-watermelon.avif"
+                alt=""
+              />
+              <h3>Fruits</h3>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="/assets/file/flower.html">
+              <img
+                src="/p-description/seeds/flowers/assets/marigold-yellow.avif"
+                alt=""
+              />
+              <h3>Flower</h3>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="/assets/file/fieldcrop.html">
+              <img
+                src="/p-description/seeds/field-crop/assets/mega-sweet-forage.avif"
+                alt=""
+              />
+              <h3>Firld Crop</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="heroimg img1">
+        <img src="/assets/img/greenwheat1.jpg" alt="" />
+      </section>
+      <section class="heroimg img2">
+        <img src="/assets/img/rose.jpg" alt="" />
       </section>
     </main>
     <footer>
@@ -137,7 +213,7 @@
           <div id="footertext">
             <p>
               2024 &copy; All rights reserved
-              <span>Developed By Developers</span>
+              <span>Developed By Krushna Shahane</span>
             </p>
           </div>
           <div id="exgtralink">
