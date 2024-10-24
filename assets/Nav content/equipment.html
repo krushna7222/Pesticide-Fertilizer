@@ -11,8 +11,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/style.css" />
+
     <link rel="stylesheet" href="navcontentstyle.css" />
-    <style></style>
+    <style>
+      .item {
+        width: 25%;
+      }
+      img {
+        width: 140px;
+        height: 140px;
+      }
+      @media screen and (max-width: 500px) {
+        .item {
+          width: 40%;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -52,10 +67,20 @@
                   <li>
                     <a href=""><i class="fa-solid fa-bars" id="menubar"></i></a>
                     <ul id="megamenu">
-                      <li><a href="">IMPLEMENTS</a></li>
-                      <li><a href="">AGRICULTURE TOOL</a></li>
-                      <li><a href="">ACCESSORIES</a></li>
-                      <li><a href="">IRRIGATION</a></li>
+                      <li>
+                        <a href="/assets/file/implements.html">IMPLEMENTS</a>
+                      </li>
+                      <li>
+                        <a href="/assets/file/agriculture-tool.html"
+                          >AGRICULTURE TOOL</a
+                        >
+                      </li>
+                      <li>
+                        <a href="/assets/file/accessories.html">ACCESSORIES</a>
+                      </li>
+                      <li>
+                        <a href="/assets/file/irrigation.html">IRRIGATION</a>
+                      </li>
                     </ul>
                   </li>
                 </ul>
@@ -66,10 +91,12 @@
         <hr />
         <div id="bottom">
           <ul id="menu">
-            <li><a href="">IMPLEMENTS</a></li>
-            <li><a href="">AGRICULTURE TOOL</a></li>
-            <li><a href="">ACCESSORIES</a></li>
-            <li><a href="">IRRIGATION</a></li>
+            <li><a href="/assets/file/implements.html">IMPLEMENTS</a></li>
+            <li>
+              <a href="/assets/file/agriculture-tool.html">AGRICULTURE TOOL</a>
+            </li>
+            <li><a href="/assets/file/accessories.html">ACCESSORIES</a></li>
+            <li><a href="/assets/file/irrigation.html">IRRIGATION</a></li>
           </ul>
         </div>
       </nav>
@@ -79,6 +106,54 @@
         <div class="hero-text">
           <h1>EQUIPMENTS</h1>
         </div>
+      </section>
+      <section class="categories">
+        <h2>Categories</h2>
+        <div class="container">
+          <div class="item">
+            <a href="/assets/file/implements.html">
+              <img
+                src="/p-description/equipments/impliments/assets/neptune-bc-520w.avif"
+                alt=""
+              />
+              <h3>Implements</h3>
+            </a>
+          </div>
+
+          <div class="item">
+            <a href="/assets/file/agriculture-tool.html">
+              <img
+                src="/p-description/equipments/agriculture-tool/assets/bharat-goa-akadi.avif"
+                alt=""
+              />
+              <h3>Agriculture Tool</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/assets/file/accessories.html">
+              <img
+                src="/p-description/equipments/accessories/assets/balwaan-bhoomi-torch.avif"
+                alt=""
+              />
+              <h3>Accessories</h3>
+            </a>
+          </div>
+          <div class="item">
+            <a href="/assets/file/irrigation.html">
+              <img
+                src="/p-description/equipments/irrigation/assets/siddhi-round-online.avif"
+                alt=""
+              />
+              <h3>Irrigation</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="heroimg img1">
+        <img src="/assets/img/8.jpg" alt="" />
+      </section>
+      <section class="heroimg img2">
+        <img src="/assets/img/green.jpg" alt="" />
       </section>
     </main>
     <footer>
